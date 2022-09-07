@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+// 3 * (2)!
+// 2 * (1)!
+// 1 * (0)!
+
+int fact(int n)
+{
+    // base case
+    if(n==0)
+    {
+        return 1;
+    }
+    // recursive case
+    int smallAns = n * fact(n-1);
+    return smallAns;
+}
+
+int main(){
+    int n;
+    cin>>n;
+    cout<<fact(n)<<endl;
+    return 0;
+}
